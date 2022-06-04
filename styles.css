@@ -11,7 +11,59 @@ html {
     font-size: 62.5%;
 }
 
-
 body {
-    background-color: purple;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    position: relative;
+    padding: 1rem;
+}
+
+nav a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    position: absolute;
+    top: 0.7rem;
+    right: 1rem;
+}
+
+nav li {
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+main {
+    margin: 1rem auto;
+    width: 80%;
+}
+
+main section {
+    margin-top: 6rem;
+    padding: 2rem;
+}
+
+.home img {
+    float: left;
+    margin-right: 3rem;
+    width: 400px;
+}
+
+footer {
+    background-color: orange;
+    text-align: center;
+    padding: 4rem;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
 }
