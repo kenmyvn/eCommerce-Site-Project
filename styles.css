@@ -107,6 +107,23 @@ input[type=text], select, textarea {
     resize: vertical
 }
 
+textarea {
+    height: 150px;
+}
+
+input[type=send] {
+    background-color: orange;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: center;
+}
+
 .contactform {
     font-size: 20px;
     font-weight: normal;
