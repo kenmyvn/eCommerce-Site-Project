@@ -26,15 +26,23 @@ header {
 
 nav a {
     color: black;
-    font-size: 30px;
+    font-size: 20px;
     text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+img {
+    width: 27px;
 }
 
 nav ul {
     list-style-type: none;
     position: absolute;
     top: 0.7rem;
-    right: 1rem;
+    left: 1rem;
+    align-self: center;
 }
 
 nav li {
@@ -58,12 +66,26 @@ main section {
     width: 400px;
 }
 
+.about img {
+    width: 150px;
+}
+
+.products img {
+    width: 150px;
+}
+
+
 footer {
     background-color: orange;
     text-align: center;
     padding: 4rem;
-    position: fixed;
     width: 100%;
     left: 0;
     bottom: 0;
+}
+
+hr {
+    border: 3px solid black;
+    border-radius: 5px;
+    align-self: center;
 }
