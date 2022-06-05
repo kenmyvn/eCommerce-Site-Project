@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav>
+            CARA <img src=".\assets\icons8-pottery-96.png"> CARA</a>
             <ul>
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>PRODUCTS</li>
-                <li>CONTACT</li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="">ABOUT</a></li>
             </ul>
-            <a href="">CARA <img src=".\assets\icons8-pottery-96.png"> CARA</a>
         </nav>
     </header>
     <hr>
@@ -24,12 +24,16 @@
         <section class="home">
             <h1>CERAMICS CRAFTED BY HAND...</h1>
             <h2>...FROM THE GROUND UP</h2>
-            <img src=".\assets\earl-wilcox-y3W0CzO063w-unsplash-alt.jpg" alt="hands creating pottery"/>
         </section>
         <section class="about">
             <h1>ABOUT US</h1> 
-            <img src=".\assets\Vase_Dame_2048x2048.jpg" alt="pink flower in white vase"/>
-            <img src=".\assets\Cylinder_unglazed3_2048x2048.jpg" alt="large green plant in white vase"/>
+            <hr>
+            <div class="image1">
+                <img src=".\assets\Vase_Dame_2048x2048.jpg" alt="pink flower in white vase"/>
+            </div>
+            <div class="image2">
+                <img src=".\assets\Cylinder_unglazed3_2048x2048.jpg" alt="large green plant in white vase"/>
+            </div>
             <p>
               This is an about us.   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -38,9 +42,27 @@
               cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
+            <p2>
+                Nulla porttitor massa id neque aliquam vestibulum morbi.
+                Facilisi nullam vehicula ipsum a arcu cursus vitae congue.
+                Nam libero justo laoreet sit amet cursus sit amet dictum.
+                Tristique magna sit amet purus gravida quis. Velit euismod
+                in pellentesque massa placerat. In ante metus dictum at tempor
+                commodo. Libero nunc consequat interdum varius sit amet mattis.
+                Egestas sed sed risus pretium quam vulputate dignissim. Diam
+                phasellus vestibulum lorem sed risus. Cursus sit amet dictum
+                sit amet justo donec enim.
+            </p2>
+            <p3>
+                Tincidunt praesent semper feugiat nibh sed.
+                Vulputate mi sit amet mauris commodo quis
+                imperdiet massa. Amet tellus cras adipiscing enim
+                eu turpis egestas pretium aenean. Nullam ac tortor vitae purus 
+            </p3>
         </section>
         <section class="products">
             <h1>OUR PRODUCTS</h1>
+            <hr>
             <img src=".\assets\linh-le-a0rE64YJDA4-unsplash.jpg" alt="pedra vase"/>
             <img src=".\assets\oriento-l0ah3UBLppo-unsplash.jpg" alt="campeao vase"/>
             <img src=".\assets\oriento-maVIpNNtmlQ-unsplash.jpg" alt="natureza vase"/>
@@ -61,14 +83,15 @@
         </section>
         <section class="contact">
             <h1>CONTACT US</h1>
-            <p>
-              This is an about us.   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-              minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <hr>
+            <div class="contactform">
+                <form action="#">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email" name="email">
+                    <label for="message">MESSAGE</label>
+                    <input type="text" id="message" name="message">
+                </form>
+            </div>
         </section>
     </main>
     <footer>

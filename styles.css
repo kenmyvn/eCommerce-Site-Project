@@ -31,15 +31,16 @@ nav a {
     text-align: center;
     letter-spacing: 2px;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
 }
 
-img {
+.header img {
     width: 27px;
 }
 
 nav ul {
     list-style-type: none;
-    position: absolute;
     top: 0.7rem;
     left: 1rem;
     align-self: center;
@@ -56,24 +57,62 @@ main {
 }
 
 main section {
-    margin-top: 6rem;
     padding: 2rem;
 }
 
-.home img {
-    float: left;
-    margin-right: 3rem;
-    width: 400px;
+.home {
+    background-image: url("./assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.about img {
+.about h1 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.image1 img {
     width: 150px;
+}
+
+.image2 img {
+    width: 150px;
+}
+
+.products h1 {
+    font-size: 30px;
+    font-weight: normal;
 }
 
 .products img {
     width: 150px;
 }
 
+.contact h1 {
+    font-size: 30px;
+    font-weight: normal;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+.contactform {
+    font-size: 20px;
+    font-weight: normal;
+    background-color: white;
+    padding: 20px;
+}
 
 footer {
     background-color: orange;
