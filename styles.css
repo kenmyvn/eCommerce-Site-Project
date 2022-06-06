@@ -135,26 +135,53 @@ main section.home {
     align-self: flex-end;
 }
 
+.about .aboutmain {
+    display: flex;
+    justify-content: space-between;
+}
+
 .about h1 {
     font-size: 30px;
     font-weight: normal;
 }
 
+.about p {
+    font-size: 15px;
+}
+
+.about .innerabout p:not(:last-of-type) {
+    padding-bottom: 2em;
+}
+
+.image1 {
+    width: 60%;
+    padding-top: 30px;
+}
+
+.image1 .innerabout {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
 .image1 img {
-    width: 150px;
+    width: 30%;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+
+.image2 {
+    width: 35%;
 }
 
 .image2 img {
-    width: 150px;
+    width: 100%;
+    transform: scaleX(-1);
 }
 
 .products h1 {
     font-size: 30px;
     font-weight: normal;
-}
-
-.products img {
-    width: 150px;
 }
 
 .contact h1 {
@@ -177,7 +204,7 @@ textarea {
 }
 
 input[type=send] {
-    background-color: orange;
+    background-color: #BF7631;
     color: white;
     padding: 12px;
     border: none;
@@ -197,7 +224,7 @@ input[type=send] {
 }
 
 footer {
-    background-color: orange;
+    background-color: #BF7631;
     text-align: center;
     padding: 4rem;
     width: 100%;
@@ -215,4 +242,72 @@ hr.hrtop {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+}
+
+hr.middle {
+    width: 60%;
+}
+
+hr.producthr {
+    width: 70%;
+}
+
+.productcontainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    padding-top: 100px;
+    width: 250px;
+}
+
+.products img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.productheader {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.productimage {
+    margin: 0 auto;
+    width: 250px;
+}
+
+.producttext {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+.productfooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productfooter a {
+    font-size: 14px;
+    color:#BF7631;
+}
+
+.productfooter button {
+    background-color: #BF7631;
+    color: white;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 0;
+    margin-left: auto;
+    text-align: center;
 }
