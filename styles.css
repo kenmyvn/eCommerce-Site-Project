@@ -22,6 +22,12 @@ header {
     background-color: white;
     position: relative;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 nav a {
@@ -30,9 +36,34 @@ nav a {
     text-decoration: none;
     text-align: center;
     letter-spacing: 2px;
-    font-weight: bold;
     display: flex;
     flex-direction: row;
+}
+
+.caracontainer {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.searchcontainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchcontainer input[type=text] {
+    height: 8px;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: 15px;
+}
+
+.searchcontainer a {
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    width: 90px;
+    color: black;
 }
 
 .header img {
@@ -43,7 +74,8 @@ nav ul {
     list-style-type: none;
     top: 0.7rem;
     left: 1rem;
-    align-self: center;
+    display: flex;
+    font-weight: normal;
 }
 
 nav li {
@@ -51,23 +83,43 @@ nav li {
     margin-right: 0.5rem;
 }
 
+nav li:not(:last-of-type) {
+    margin-right: 20px;
+}
+
 main {
     margin: 1rem auto;
-    width: 80%;
 }
 
 main section {
     padding: 2rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.home {
-    background-image: url("./assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+main section.home {
     width: 100%;
-    height: 100vh;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
+    padding: 0;
+}
+
+.home .inner {
+    background-image: url("./assets/earl-wilcox-y3W0CzO063w-unsplash-alt.jpg");
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    min-height: 500px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .home h1 {
@@ -80,6 +132,7 @@ main section {
     font-size: 40px;
     color: white;
     font-weight: normal;
+    align-self: flex-end;
 }
 
 .about h1 {
@@ -156,4 +209,10 @@ hr {
     border: 3px solid black;
     border-radius: 5px;
     align-self: center;
+}
+
+hr.hrtop {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
